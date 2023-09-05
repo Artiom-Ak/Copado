@@ -8,7 +8,7 @@ Login to DotCompliance suite
     [tags]                    Lead
     Setup Browser               
     Login                     
-
+Preq1:One record that the user above is not its owner exists and in an editable state=Auto02PQ1Prereq_DifOwner
     LaunchApp    Master Documents
     ClickText    New
     UseModal    On
@@ -17,7 +17,7 @@ Login to DotCompliance suite
     UseModal    Off
     UseModal    On
     UseModal    Off
-    TypeText    *Document Name    Auto02PQ1Prereq_DifOwner
+    TypeText    *Document Name    artest101
     PickList    *Document Type    Other
     PickList    *Business Unit    General
     ComboBox    Search Departments...    test
