@@ -22,11 +22,7 @@ Preq1:One record that the user above is not its owner exists and in an editable 
     PickList    *Business Unit    General
     ComboBox    Search Departments...    test
     ClickText    Save    partial_match=False
-
-
     ClickText    Upload FilesOr drop files
-    
-
     Upload File  Upload Files   resources/artest.docx
     UseModal    On
     ClickText    Done
