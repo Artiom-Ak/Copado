@@ -22,5 +22,13 @@ Login to DotCompliance suite
     PickList    *Business Unit    General
     ComboBox    Search Departments...    test
     ClickText    Save    partial_match=False
+
+
     ClickText    Upload FilesOr drop files
+    VerifyText   test.docx               partial_match=True
+    TypeText    Upload FilesOr drop files    C:\\fakepath\\test.docx
+    UseModal    On
+    ClickText    Done
+    UseModal    Off
+
 
