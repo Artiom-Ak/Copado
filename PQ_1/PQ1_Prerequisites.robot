@@ -25,8 +25,9 @@ Preq1:One record that the user above is not its owner exists and in an editable 
 
 
     ClickText    Upload FilesOr drop files
-    VerifyText   test.docx               partial_match=True
-    TypeText    Upload FilesOr drop files    C:\\fakepath\\test.docx
+    
+
+    Upload File  Upload Files   resources/artest.docx
     UseModal    On
     ClickText    Done
     UseModal    Off
