@@ -23,7 +23,7 @@ Preq1:One record that the user above is not its owner exists and in an editable 
     ComboBox    Search Departments...    test
     ClickText    Save    partial_match=False
  
-    ClickText    Upload Files, Drop file here or clickto select from a directory   
+    ClickText    Upload Files, Drop file here or click to select from a directory   
     UploadFile           Upload Files           art.xml
     TypeText    Upload FilesOr drop files    art.xml
     UseModal    On
