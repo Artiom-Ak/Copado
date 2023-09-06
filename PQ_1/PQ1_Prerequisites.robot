@@ -17,7 +17,7 @@ Preq1:One record that the user above is not its owner exists and in an editable 
     UseModal    Off
     UseModal    On
     UseModal    Off
-    TypeText    *Document Name    artest104
+    TypeText    *Document Name    artest105
     PickList    *Document Type    Other
     PickList    *Business Unit    General
     ComboBox    Search Departments...    test
