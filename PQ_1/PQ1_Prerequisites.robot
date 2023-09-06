@@ -17,10 +17,10 @@ Preq1:One record that the user above is not its owner exists and in an editable 
     UseModal    Off
     UseModal    On
     UseModal    Off
-    TypeText    *Document Name    artest105
+    TypeText    *Document Name    artest106
     PickList    *Document Type    Other
     PickList    *Business Unit    General
     ComboBox    Search Departments...    test
     ClickText    Save    partial_match=False
-    UploadFile           Upload Files    ../artest.docx
+    UploadFile           Upload Files    ../resources/artest.docx
     ClickText            Done
