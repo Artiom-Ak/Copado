@@ -23,3 +23,4 @@ Preq1:One record that the user above is not its owner exists and in an editable 
     ComboBox    Search Departments...    test
     ClickText    Save    partial_match=False
     UploadFile           Upload Files    ../artest.docx
+    ClickText            Done
