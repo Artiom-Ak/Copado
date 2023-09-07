@@ -23,7 +23,7 @@ Preq1:One record that the user above is not its owner exists and in an editable 
     ComboBox    Search Departments...    test
     ClickText    Save    partial_match=False
     UploadFile           Upload Files    ../resources/artest.docx
-    ClickText            Done
+    ClickText            
     ClickText    Edit Revision Owner
     ComboBox    Search People...    QA User
     ClickText    Save
