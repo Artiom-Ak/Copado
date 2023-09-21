@@ -96,14 +96,14 @@ Preq3:One Master Documents records, type Controlled including Document Revisions
     TypeText         User                        admin
     TypeText         User Password               Dotbcs00
     ClickText        Sign
-    ClickText        Actions                     partial_match=False
+    ClickText        Actions                     partial_match=False         delay=2s
     ClickText        QA Approval - Skip Training
     TypeText         Comments                    test
     ClickText        Next
-    TypeText         User                        admin
+    TypeText         User                        admin                       delay=2s
     TypeText         User Password               Dotbcs00
     ClickText        Sign
-    LaunchApp        Master Documents
+    LaunchApp        Master Documents                                    delay=5s
     TypeText         Search this list...         Form2\n
     ClickText        Form2
     ClickText        New                         partial_match=False
