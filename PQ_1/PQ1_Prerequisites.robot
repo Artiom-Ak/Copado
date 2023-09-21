@@ -75,7 +75,7 @@ Preq3:One Master Documents records, type Controlled including Document Revisions
     ClickItem        checkbox                    Anchor=Admin User           partial_match=False
     ClickText        Next                        partial_match=False
     TypeText         Description of Change       test
-    TypeText         Rationale of Revision       test
+    TypeText         Rationale of Revision       abc123!
     ComboBox         Search People...            Admin User
     ClickText        Next
     TypeText         User                        admin
