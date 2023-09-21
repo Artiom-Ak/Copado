@@ -57,7 +57,7 @@ Preq3:One Master Documents records, type Controlled including Document Revisions
     UseModal         On
     ClickText        ControlledDocument which require review and approval within the quality system
     ClickText        Next
-    TypeText         *Document Name              Form2
+    TypeText         *Document Name              Form6
     PickList         *Document Type              Form
     PickList         *Business Unit              General
     ComboBox         Search Departments...       test
@@ -66,30 +66,14 @@ Preq3:One Master Documents records, type Controlled including Document Revisions
     UseModal         Off
     UploadFile       Upload Files                ../resources/artest.docx
     ClickText        Done
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ClickText        Actions                     partial_match=False
+    ClickText        Actions                     partial_match=False    delay=10s
     ClickText        Send for Review
+    TypeText         Search by Name              Admin
     ClickItem        checkbox                    Anchor=Admin User           partial_match=False
     ClickText        Next                        partial_match=False
-    TypeText         Search by Name              admin
-    VerifyTable      r1c2                        Admin User
-    ClickCheckbox    r1on/c2                     on
+    TypeText         Search by Name              Admin
+    ClickItem        checkbox                    Anchor=Admin User           partial_match=False
     ClickText        Next                        partial_match=False
-
-
-
     TypeText         Description of Change       test
     TypeText         Rationale of Revision       test
     ComboBox         Search People...            Admin User
@@ -126,9 +110,11 @@ Preq3:One Master Documents records, type Controlled including Document Revisions
     ClickText        Confirm
     ClickText        Actions                     partial_match=False
     ClickText        Send for Review
-    ClickCheckbox    r?on/c1                     on
+    TypeText         Search by Name              admin
+    ClickItem        checkbox                    Anchor=Admin User           partial_match=False
     ClickText        Next                        partial_match=False
-    ClickCheckbox    r?on/c1                     on
+    TypeText         Search by Name              admin
+    ClickItem        checkbox                    Anchor=Admin User           partial_match=False
     ClickText        Next                        partial_match=False
     TypeText         Description of Change       test
     TypeText         Rationale of Revision       test
