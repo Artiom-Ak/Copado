@@ -17,23 +17,23 @@ Preq1:One record that the user above is not its owner exists and in an editable 
     UseModal    Off
     UseModal    On
     UseModal    Off
-    TypeText    *Document Name    artest106
+    TypeText    *Document Name    artest111
     PickList    *Document Type    Other
     PickList    *Business Unit    General
     ComboBox    Search Departments...    test
     ClickText    Save    partial_match=False
     UploadFile           Upload Files    ../resources/artest.docx
-    ClickText            
+    ClickText            Done
     ClickText    Edit Revision Owner
     ComboBox    Search People...    QA User
     ClickText    Save
 Preq2:One Master Documents records, type Simple including Document Revisions in Effective state exists in the system:Name: Temp1, Business unit = General, Is Template = checked Document Type = Appendix, Language = English.
-    ClickText    Master Documents List
-    ClickText    New Master Document
+    LaunchApp    Master Documents
+    ClickText    New
     UseModal    On
     ClickText    SimpleDocument which require approval within the quality system
     ClickText    Next
-    TypeText    *Document Name    artest107
+    TypeText    *Document Name    artest112
     PickList    *Document Type    Appendix
     PickList    *Business Unit    General
     ClickCheckbox    Is Template    on
@@ -43,8 +43,10 @@ Preq2:One Master Documents records, type Simple including Document Revisions in 
     UseModal    Off
     UploadFile           Upload Files    ../resources/artest.docx
     ClickText            Done
-    ClickText    Master Documents List
-    ClickText    New Master Document
+Preq3:One Master Documents records, type Controlled including Document Revisions in 'Effective', Revision Number 2.0 and above state exists in the system:
+Name: Form1, Business unit = General, Document Type = Form
+    LaunchApp    Master Documents
+    ClickText    New
     UseModal    On
     ClickText    Next
     TypeText    *Document Name    Form1
