@@ -68,10 +68,13 @@ Preq3:One Master Documents records, type Controlled including Document Revisions
     ClickText        Done
     ClickText    Actions    partial_match=False
     ClickText    Send for Review
-    UseTable    Sort\n by:\n
-    ClickCheckbox    r?on/c1    on
+    TypeText    Search by Name    admin
+    VerifyTable    r1c2    Admin User
+    ClickCheckbox    r1on/c1    on
     ClickText    Next    partial_match=False
-    ClickCheckbox    r?on/c1    on
+    TypeText    Search by Name    admin
+    VerifyTable    r1c2    Admin User
+    ClickCheckbox    r1on/c1    on
     ClickText    Next    partial_match=False
     TypeText    Description of Change    test
     TypeText    Rationale of Revision    test
