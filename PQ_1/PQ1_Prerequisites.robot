@@ -42,20 +42,20 @@ Preq2:One Master Documents records, type Simple including Document Revisions in 
     UseModal         Off
     UploadFile       Upload Files                ../resources/artest.docx
     ClickText        Done
-    ClickText    Actions    partial_match=False
-    ClickText    Approve
-    TypeText    Description of Change    test
-    TypeText    Rationale of Revision    abc123!
-    ComboBox    Search People...    Admin User
-    ClickText    Next
-    TypeText    User    admin
-    TypeText    User Password    Dotbcs00
-    ClickText    Sign
+    ClickText        Actions                     partial_match=False
+    ClickText        Approve
+    TypeText         Description of Change       test
+    TypeText         Rationale of Revision       abc123!
+    ComboBox         Search People...            Admin User
+    ClickText        Next
+    TypeText         User                        admin
+    TypeText         User Password               Dotbcs00
+    ClickText        Sign
 Preq3:One Master Documents records, type Controlled including Document Revisions in 'Effective', Revision Number 2.0 and above state exists in the system:Name: Form1, Business unit = General, Document Type = Form
     LaunchApp        Master Documents
     ClickText        New
     UseModal         On
-    ClickText    ControlledDocument which require review and approval within the quality system
+    ClickText        ControlledDocument which require review and approval within the quality system
     ClickText        Next
     TypeText         *Document Name              Form2
     PickList         *Document Type              Form
@@ -66,90 +66,104 @@ Preq3:One Master Documents records, type Controlled including Document Revisions
     UseModal         Off
     UploadFile       Upload Files                ../resources/artest.docx
     ClickText        Done
-    ClickText    Actions    partial_match=False
-    ClickText    Send for Review
-    TypeText    Search by Name    admin
-    VerifyTable    r1c2    Admin User
-    ClickCheckbox    r1on/c1    on
-    ClickText    Next    partial_match=False
-    TypeText    Search by Name    admin
-    VerifyTable    r1c2    Admin User
-    ClickCheckbox    r1on/c1    on
-    ClickText    Next    partial_match=False
-    TypeText    Description of Change    test
-    TypeText    Rationale of Revision    test
-    ComboBox    Search People...    Admin User
-    ClickText    Next
-    TypeText    User    admin
-    TypeText    User Password    Dotbcs00
-    ClickText    Sign
-    ClickText    Actions    partial_match=False
-    ClickText    Start Review
-    TypeText    User    admin
-    TypeText    User Password    Dotbcs00
-    ClickText    Sign
-    ClickText    Actions    partial_match=False
-    ClickText    Send for Approval
-    TypeText    User    admin
-    TypeText    User Password    Dotbcs00
-    ClickText    Sign
-    ClickText    Actions    partial_match=False
-    ClickText    Start Approval
-    TypeText    User    admin
-    TypeText    User Password    Dotbcs00
-    ClickText    Sign
-    ClickText    Actions    partial_match=False
-    ClickText    QA Approval - Skip Training
-    TypeText    Comments    test
-    ClickText    Next
-    TypeText    User    admin
-    TypeText    User Password    Dotbcs00
-    ClickText    Sign
-    LaunchApp    Master Documents
-    TypeText    Search this list...    Form2\n
-    ClickText    Form2
-    ClickText    New    partial_match=False
-    ClickText    Confirm
-    ClickText    Actions    partial_match=False
-    ClickText    Send for Review
-    ClickCheckbox    r?on/c1    on
-    ClickText    Next    partial_match=False
-    ClickCheckbox    r?on/c1    on
-    ClickText    Next    partial_match=False
-    TypeText    Description of Change    test
-    TypeText    Rationale of Revision    test
-    ComboBox    Search People...    Admin User
-    ClickText    Next
-    TypeText    User    admin
-    TypeText    User Password    Dotbcs00
-    ClickText    Sign
-    ClickText    Actions    partial_match=False
-    ClickText    Start Review
-    TypeText    User    admin
-    TypeText    User Password    Dotbcs00
-    ClickText    Sign
-    ClickText    Actions    partial_match=False
-    ClickText    Send for Approval
-    TypeText    User    admin
-    TypeText    User Password    Dotbcs00
-    ClickText    Sign
-    ClickText    Actions    partial_match=False
-    ClickText    Start Approval
-    TypeText    User    admin
-    TypeText    User Password    Dotbcs00
-    ClickText    Sign
-    ClickText    Actions    partial_match=False
-    ClickText    QA Approval - Skip Training
-    TypeText    Comments    test
-    ClickText    Next
-    TypeText    User    admin
-    TypeText    User Password    Dotbcs00
-    ClickText    Sign
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ClickText        Actions                     partial_match=False
+    ClickText        Send for Review
+    ClickItem        checkbox                    Anchor=Admin User           partial_match=False
+    ClickText        Next                        partial_match=False
+    TypeText         Search by Name              admin
+    VerifyTable      r1c2                        Admin User
+    ClickCheckbox    r1on/c2                     on
+    ClickText        Next                        partial_match=False
+
+
+
+    TypeText         Description of Change       test
+    TypeText         Rationale of Revision       test
+    ComboBox         Search People...            Admin User
+    ClickText        Next
+    TypeText         User                        admin
+    TypeText         User Password               Dotbcs00
+    ClickText        Sign
+    ClickText        Actions                     partial_match=False
+    ClickText        Start Review
+    TypeText         User                        admin
+    TypeText         User Password               Dotbcs00
+    ClickText        Sign
+    ClickText        Actions                     partial_match=False
+    ClickText        Send for Approval
+    TypeText         User                        admin
+    TypeText         User Password               Dotbcs00
+    ClickText        Sign
+    ClickText        Actions                     partial_match=False
+    ClickText        Start Approval
+    TypeText         User                        admin
+    TypeText         User Password               Dotbcs00
+    ClickText        Sign
+    ClickText        Actions                     partial_match=False
+    ClickText        QA Approval - Skip Training
+    TypeText         Comments                    test
+    ClickText        Next
+    TypeText         User                        admin
+    TypeText         User Password               Dotbcs00
+    ClickText        Sign
+    LaunchApp        Master Documents
+    TypeText         Search this list...         Form2\n
+    ClickText        Form2
+    ClickText        New                         partial_match=False
+    ClickText        Confirm
+    ClickText        Actions                     partial_match=False
+    ClickText        Send for Review
+    ClickCheckbox    r?on/c1                     on
+    ClickText        Next                        partial_match=False
+    ClickCheckbox    r?on/c1                     on
+    ClickText        Next                        partial_match=False
+    TypeText         Description of Change       test
+    TypeText         Rationale of Revision       test
+    ComboBox         Search People...            Admin User
+    ClickText        Next
+    TypeText         User                        admin
+    TypeText         User Password               Dotbcs00
+    ClickText        Sign
+    ClickText        Actions                     partial_match=False
+    ClickText        Start Review
+    TypeText         User                        admin
+    TypeText         User Password               Dotbcs00
+    ClickText        Sign
+    ClickText        Actions                     partial_match=False
+    ClickText        Send for Approval
+    TypeText         User                        admin
+    TypeText         User Password               Dotbcs00
+    ClickText        Sign
+    ClickText        Actions                     partial_match=False
+    ClickText        Start Approval
+    TypeText         User                        admin
+    TypeText         User Password               Dotbcs00
+    ClickText        Sign
+    ClickText        Actions                     partial_match=False
+    ClickText        QA Approval - Skip Training
+    TypeText         Comments                    test
+    ClickText        Next
+    TypeText         User                        admin
+    TypeText         User Password               Dotbcs00
+    ClickText        Sign
 Preq4:One Product Item record exists in the system with related opened product version
-    LaunchApp    Product Items
-    ClickText    New
-    UseModal    On
-    TypeText    *Product Name    ARTPI
-    PickList    *Unit of Measure    Kg
-    ClickText    Save    partial_match=False
-    UseModal    Off
+    LaunchApp        Product Items
+    ClickText        New
+    UseModal         On
+    TypeText         *Product Name               ARTPI
+    PickList         *Unit of Measure            Kg
+    ClickText        Save                        partial_match=False
+    UseModal         Off
