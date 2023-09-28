@@ -104,9 +104,10 @@ Preq3:One Master Documents records, type Controlled including Document Revisions
     TypeText         User Password               Dotbcs00
     ClickText        Sign
     LaunchApp        Master Documents                                    delay=5s
-    TypeText         Search this list...         Form2\n
-    ClickText        Form2
-    ClickText        New                         partial_match=False
+    TypeText    Search this list...    Form6\n
+    TypeText         Search this list...         Form6
+    ClickText        Form6
+    ClickText        New                         partial_match=False         delay=3s
     ClickText        Confirm
     ClickText        Actions                     partial_match=False
     ClickText        Send for Review
