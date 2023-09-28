@@ -2,7 +2,8 @@
 Library                   QWeb
 Library                   QForce
 Library                   String
-
+Library                   BuiltIn
+Library                   DateTime
 *** Variables ***
 # IMPORTANT: Please read the readme.txt to understand needed variables and how to handle them!!
 ${BROWSER}                chrome
