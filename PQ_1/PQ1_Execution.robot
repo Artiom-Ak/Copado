@@ -56,5 +56,8 @@ Login to DotCompliance suite
     ClickText         Save                        partial_match=False
     UseModal          Off
     
+    ClickText    Edit    partial_match=False
+    UseModal    On
+
     GetFieldValue     Master Document Number
     verifyfield       Master Document Number      ${DocNum}
