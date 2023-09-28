@@ -2,8 +2,8 @@
 Resource                      ../resources/common.robot
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
-Library                         QVision
-Library                         FakerLibrary
+Library                       QVision
+Library                       FakerLibrary
 
 *** Test Cases ***
 Login to DotCompliance suite
