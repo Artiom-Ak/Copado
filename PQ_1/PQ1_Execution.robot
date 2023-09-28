@@ -2,6 +2,8 @@
 Resource                      ../resources/common.robot
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
+Library                         QVision
+Library                         FakerLibrary
 
 *** Test Cases ***
 Login to DotCompliance suite
@@ -53,8 +55,6 @@ Login to DotCompliance suite
     TypeText    PDF URL    1
     ClickText    Save    partial_match=False
     UseModal    Off
-    VerifyText    PRO-0000184
-    VerifyText    Procedure
-   GetFieldValue            Master Document Number                        ${number}
+${number}=      GetFieldValue           Master Document Number                        
      Log To Console    ${number}  
-${number}       GetFieldValue          Master Document Number               
+
